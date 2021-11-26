@@ -1,30 +1,47 @@
 *** Settings ***
-Library          AppiumLibrary
-Resource         ../Resources/apna common.robot
-Suite Setup      Open apna application
-Suite Teardown   Close apna
-
+Library            AppiumLibrary
+Resource           ../Resources/apna common.robot
+Suite Setup        Open apna application
+Suite Teardown     Close apna application
 
 
 *** Test Cases ***
-Launch the apna application and fill user details
-    [Documentation]     Login with mobile number
+
+User Login through mobile number
+    [Documentation]     User login through valid mobile number
     Select None of the above option
-    Then Enter mobile number and click next
+    Enter mobile number and click next
     Enter the otp and click next
-Then Choose language of your choice and proceed
-    [Documentation]     Choose language
-    Then Choose language and give next
+
+User Choose Language
+    [Documentation]     User will select language from the list of languages
+    Choose language and give next
     Enter Visiting card details by clicking letsgo option
-Then Enter the required personal details and proceed
-    [Documentation]     User details
-    Then Enter personal details and click next
-Select Work Experience and give education details and proceed
-    [Documentation]     Work experience and education details
-    Select Work Experience and click next
-    Then Enter education details and click next
-Choose the desired job category,gallary,contact details and proceed
-    [Documentation]     Job category
+
+User Enter the required personal details for visiting card
+    [Documentation]    Enters the personal details and click next
+    Enter User Name
+    Enter User Job City
+    Enter User Job Location
+    User Select Gender
+    Click on next
+
+User Enter the experience details
+    [Documentation]      User select work experience
+   Enter Work Experience
+   Enter Job Title
+   Enter Company Name
+   Enter Salary deatils
+   Click next
+
+User Enter the Education details
+    [Documentation]      User enter Education Details
+    Enter Highest Qualification
+    Enter Degree Details
+    Enter University Details
+
+User Choose the desired job category
+    [Documentation]     User will select desired job category from the list
     Choose job category and give next
     Then give gallary details and click next
     Enter contact details and give next

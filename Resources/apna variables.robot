@@ -1,24 +1,32 @@
 *** Variables ***
+
+#Open Application Variables
 ${URL}                      http://localhost:4723/wd/hub
 ${Platform_Name}            Android
 ${Platform_Version}         8.1
 ${Device_Name}              emulator-5554
 ${app_path}                 C:\\Users\\user\\PycharmProjects\\Apna app login\\apna-devDebug-dev-9293.apk
+
+#Login with number Variables
 ${mobile}                   Your Mobile number
 ${mobile number}            id=et_login_number
-${number}                   9875340984
+${number}                   9872634098
 ${next}                     id=btn_send
+
+#OTP Variables
 ${otp}                      Enter OTP
 ${otp_1}                    id=et_otp1
 ${otp_2}                    id=et_otp2
 ${otp_3}                    id=et_otp3
 ${otp_4}                    id=et_otp4
+
+#Language Variables
 ${choose language}          Choose Language
 ${language}                 English
 ${continue}                 id=btn_continue
 ${lets go}                  Let’s go!
-${visiting card}            Let us make your visiting card
-${name}                     Name
+
+#User Details Variables
 ${enter name}               id=act_profile_info_et_full_name
 ${full name}                Hithashree
 ${city}                     id=act_profile_info_et_city
@@ -34,6 +42,8 @@ ${Location_Name}            Jaya
 ${Full_Location}            Jayanagar
 ${gender}                   id=iv_female_tick
 ${proceed}                  id=act_profile_info_btn_continue
+
+#Work Experience
 ${experience}               YES
 ${select experience}        id=act_education_et_total_exp
 ${job title}                id=act_profile_info_et_job_title
@@ -43,6 +53,8 @@ ${company name}             Moolya Projects
 ${salary}                   id=act_education_seekbar_salary
 ${work}                     Do you have any work experience?
 ${go}                       id=act_education_btn_continue
+
+#Education Details
 ${education}                id=et_education
 ${degree}                   id=et_degree
 ${degree name}              BTech/BE
@@ -51,6 +63,8 @@ ${college}                  id=et_college
 ${college name}             National College
 ${search college}           National College, Tiruchirappalli
 ${move}                     id=act_education_btn_continue
+
+#Job Category
 ${choose category}          Choose from Other available categories
 ${category}                 id=row_super_category
 ${category name}            IT Support
