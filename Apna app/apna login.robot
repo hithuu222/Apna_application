@@ -48,17 +48,17 @@ Click on next
     Click Element                               ${proceed}
 
 Enter Work Experience
-    Wait for text on Screen and click text         ${experience}
-    Click element                                  ${select experience}
+    Wait for text on Screen and click text      ${experience}
+    Click element                               ${select experience}
     Click Element At Coordinates         429     563
 
 Enter Job Title
-    Click element                                  ${job title}
-    Input text                                     ${job title}   ${job name}
+    Click element                               ${job title}
+    Input text                                  ${job title}   ${job name}
 
 Enter Company Name
-    Click element                                  ${company}
-    Input text                                     ${company}   ${company name}
+    Click element                               ${company}
+    Input text                                  ${company}   ${company name}
 
 Enter Salary deatils
     ${element_location}=    Get Element Location   ${salary}
@@ -70,8 +70,8 @@ Enter Salary deatils
     Swipe               ${start_x}    ${start_y}  ${end_x}  ${end_y}  400
 
 Click next
-    Click text  ${work}
-    Click element  ${go}
+    Click text      ${work}
+    Click element   ${go}
 
 Enter Highest Qualification
     Wait for Element on Screen                ${education}
