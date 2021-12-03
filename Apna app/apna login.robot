@@ -37,7 +37,7 @@ Enter User Job City
 Enter User Job Location
     Wait for text on Screen and click Text      ${apna}
     Click Element                               ${Job_Location}
-    Wait for text on Screen                     ${Set_Location}
+    Wait for text on Screen                     ${Search_Location}
     Input Text                                  ${Search_Location}           ${Location_Name}
     Wait for text on Screen and click Text      ${Full_Location}
 
