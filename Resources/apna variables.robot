@@ -1,5 +1,4 @@
 *** Variables ***
-
 #Open Application Variables
 ${URL}                      http://localhost:4723/wd/hub
 ${Platform_Name}            Android
@@ -36,8 +35,8 @@ ${search city}              Ben
 ${city name}                Bengaluru
 ${apna}                     apna
 ${Job_Location}             id=act_profile_info_et_location
-${Set_Location}             Set Job Location
-${Search_Location}          id=act_select_location_etSearchLocation
+#${Set_Location}             Set Job Location
+${Search_Location}          com.apnatime.debug:id/act_select_location_etSearchLocation
 ${Location_Name}            Jaya
 ${Full_Location}            Jayanagar
 ${gender}                   id=iv_female_tick

@@ -5,16 +5,22 @@ Open Apna application
 Check if user can view messages from the inbox
     Wait for text on Screen and click Text        ${card}
     Wait for text on Screen and click Text        ${apna}
+    Wait for Element on Screen                 	  ${change language}
+    Click Element                                 ${change language}
+    Wait for text on Screen and click Text        ${language}
+    Click Element                                 ${next}
+    Wait for text on Screen and click Text        ${apna}
     Click Element                                 ${inbox}
-    Wait for Element on Screen                    ${conversation}
-    Element Should Contain Text                   ${conversation}        ${conversation message}
+    Wait for Element on Screen                    ${inbox1}
+    Element Should Contain Text                   ${inbox1}             ${inbox message}
     Click Element                                 ${back}
 
 Check if user can view notification and mark all read
+    Wait for text on Screen and click Text        ${apna}
     Wait for Element on Screen                    ${notification}
     Click Element                                 ${notification}
     Wait for Element on Screen                    ${mark_all_read}
-    Element Should Contain Text                   ${mark_all_read}          ${message}
+    Element Should Contain Text                   ${mark_all_read}      ${message}
     Click Element                                 ${back button}
 
 Click on edit profile
@@ -22,17 +28,17 @@ Click on edit profile
     Click Element                                 ${edit profile}
 
 Edit language and give next
-    Wait for text on Screen and click Text        ${language}
+    Wait for text on Screen and click Text        ${language1}
     Click Element                                 ${next}
 
 Edit User Name
     Wait for Element on Screen                    ${name}
-    Input Text                                    ${name}        ${full_name}
+    Input Text                                    ${name}               ${full_name}
 
 Edit User Job City
     Click Element                                 ${city}
     Wait for Element on Screen                    ${search box}
-    Input Text                                    ${enter city}    ${search city}
+    Input Text                                    ${enter city}         ${search city}
     Wait for Element on Screen                    ${enter city}
     Click Text                                    ${city name}
 
@@ -40,7 +46,7 @@ Edit User Job Location
     Wait for text on Screen and click Text        ${apna name}
     Click Element                                 ${Job_Location}
     Wait for text on Screen                       ${Set_Location}
-    Input Text                                    ${Search_Location}           ${Location_Name}
+    Input Text                                    ${Search_Location}    ${Location_Name}
     Wait for text on Screen and click Text        ${Full_Location}
 
 Click on next
@@ -64,11 +70,12 @@ Edit gallary details and click next
 Verify card details
     Wait for text on Screen                       ${apnacard}
     Wait for Element on Screen                    ${verify name}
-    Element Should Contain Text                   ${verify name}        ${enter name}
-    Element Should Contain Text                   ${verify city}        ${enter cityname}
+    Element Should Contain Text                   ${verify name}          ${enter name}
+    Element Should Contain Text                   ${verify city}          ${enter cityname}
 
 Click on card view and check card views
-    Wait for Element on Screen                    ${edit profile}
+    Wait for text on Screen and click Text        ${card}
+    Wait for text on Screen                       ${card view}
     Click Text                                    ${card view}
     Wait for Element on Screen                    ${card view page}
     Click Element                                 ${close}
@@ -85,9 +92,62 @@ Click on Pending Requests and check pending requests
     Wait for Element on Screen                    ${Pending Requests page}
     Click Element                                 ${delete}
 
+User upload the resume file by clicking on upload
+    Wait for Element on Screen                    ${upload resume}
+    Click Element                                 ${upload resume}
+    Wait for Element on Screen                    ${resume}
+    Click Element                                 ${resume}
+    Wait for Element on Screen                    ${resume file}
+    Click Element                                 ${resume file}
+    Wait for Element on Screen                    ${resume submit}
+    Click Element                                 ${resume submit}
+    Wait for Element on Screen                    ${resume done}
+    Click Element                                 ${resume done}
 
-Close Apna application
-    Close application
+User click on view and check verify the uploded resume
+    Wait for Element on Screen                    ${resume view}
+    Click Element                                 ${resume view}
+    Wait for Element on Screen                    ${resume remove}
+    Click Element                                 ${resume remove}
+    Wait for Element on Screen                    ${resume close}
+    Click Element                                 ${resume close}
+
+#Deleting the account details
+    #Wait for Element on Screen	                  com.apnatime.debug:id/btn_menu
+    #Click Element                       	      com.apnatime.debug:id/btn_menu
+    #Wait for text on Screen	                  Delete profile
+    #Click Text                                   Delete profile
+    # Wait for text on Screen                 	  com.apnatime.debug:id/dlg_llYes
+    #Click Element                           	  com.apnatime.debug:id/dlg_llYes
+    #Wait for Element on Screen                   com.apnatime.debug:id/tv_deactivate_yes
+    #Click Element                                com.apnatime.debug:id/tv_deactivate_yes
+
+User will Search and select job by clicking on change job type
+    Wait for text on Screen                      ${jobs}
+    Click text                                   ${jobs}
+    Wait for Element on Screen                   ${Change_Job}
+    Click Element                                ${Change_Job}
+    Wait for Element on Screen                   ${search_field}
+    Input Text                                   ${search_field}       ${job name}
+    Wait for Element on Screen                   ${select job}
+    Click Element                                ${select job}
+	Element Should Contain Text                  ${job path}           ${particular job}
+	Click Element                                ${job remove}
+	Click Element                                ${back button}
+
+User will Search for invalid jobs by clicking on change job type
+    Wait for text on Screen                      ${apnajobs}
+    Wait for Element on Screen                   ${Change_Job}
+    Click Element                                ${Change_Job}
+    Wait for Element on Screen                   ${search_field}
+    Input Text                                   ${search_field}       ${job type}
+    Element Should Contain Text                  ${job result}         ${search result}
+    Click Element                                ${back button}
+
+
+
+#Close Apna application
+ #   Close application
 
 
 

@@ -12,37 +12,39 @@ ${card}                     Card
 ${apna}                     apnaCard
 
 #Header variables
-${inbox}                    com.apnatime.debug:id/iv_conversation
-${conversation}             com.apnatime.debug:id/noConversations
-${conversation message}     You have no conversation
-${back}                     com.apnatime.debug:id/iv_back
-${notification}             com.apnatime.debug:id/img_bell
-${mark_all_read}            com.apnatime.debug:id/btn_mark_all_read
+${change language}          com.apnatime.debug:id/menu_tv_language
+${language}                 Kannada
+${inbox}                    id=iv_conversation
+${inbox1}                   id=noConversations
+${inbox message}            You have no conversation
+${back}                     id=iv_back
+${notification}             id=img_bell
+${mark_all_read}            id=btn_mark_all_read
 ${message}                  Mark all read
 ${back button}              xpath=//android.widget.ImageButton[@index="0"]
 
 #edit profile variables
-${edit profile}             com.apnatime.debug:id/img_edit_profile
+${edit profile}             id=img_edit_profile
 
 #language
-${language}                 Kannada
-${next}                     com.apnatime.debug:id/btn_continue
+${language1}                English
+${next}                     id=btn_continue
 
 #name variables
 ${name}                     id=act_profile_info_et_full_name
-${full_name}                Priya
+${full_name}                Akash
 
 #city variables
 ${city}                     id=act_profile_info_et_city
 ${search box}               id=tv_city_name
 ${enter city}               id=search_src_text
 ${search city}              My
-${city name}                Mysore
-${apna name}                     apna
+${city name}                Mysuru
+${apna name}                apna
 
 #job location variables
 ${Job_Location}             id=act_profile_info_et_location
-${Set_Location}             Mysore
+${Set_Location}             Mysuru
 ${Search_Location}          id=act_select_location_etSearchLocation
 ${Location_Name}            J.P
 ${Full_Location}            J.P.Nagar
@@ -58,22 +60,48 @@ ${education}                id=et_education
 ${move}                     id=act_education_btn_continue
 
 #picture variables
-${done}                     com.apnatime.debug:id/act_profile_info_btn_continue
+${done}                     id=act_profile_info_btn_continue
 
 #Verify card details variables
 ${apnacard}                 apnaCard
-${verify name}              com.apnatime.debug:id/row_card_tv_name
-${enter name}               Priya
-${verify city}              com.apnatime.debug:id/row_card_tv_mobile
-${enter cityname}           Mysore
+${verify name}              id=row_card_tv_name
+${enter name}               Akash
+${verify city}              id=row_card_tv_mobile
+${enter cityname}           Mysuru
 
 #Card view, connection, pending request  variables
+${allow}                    ALLOW
 ${card view}                Card Views
-${card view page}           com.apnatime.debug:id/activity_profile_count_fragment_container
-${close}                    com.apnatime.debug:id/activity_profile_count_close
+${card view page}           id=activity_profile_count_fragment_container
+${close}                    id=activity_profile_count_close
 ${click_connection}         Connections
-${connection}               com.apnatime.debug:id/activity_profile_count_fragment_container
-${cancel}                   com.apnatime.debug:id/activity_profile_count_close
+${connection}               id=activity_profile_count_fragment_container
+${cancel}                   id=activity_profile_count_close
 ${Pending Requests}         Pending Requests
-${Pending Requests page}    com.apnatime.debug:id/activity_profile_count_fragment_container
-${delete}                  com.apnatime.debug:id/activity_profile_count_close
+${Pending Requests page}    id=activity_profile_count_fragment_container
+${delete}                   id=activity_profile_count_close
+
+#resume variables
+${upload resume}            com.apnatime.debug:id/btn_upload_resume
+${resume}                   com.apnatime.debug:id/iv_upload_icon
+${resume file}              com.android.documentsui:id/nameplate
+${resume submit}            com.apnatime.debug:id/btn_submit
+${resume done}              com.apnatime.debug:id/btn_done
+${resume view}              com.apnatime.debug:id/tv_view_resume
+${resume remove}            com.apnatime.debug:id/btn_remove
+${resume close}             com.apnatime.debug:id/iv_close
+
+#Search job
+${apnajobs}                 apnaJobs
+${jobs}                     Jobs
+${Change_Job}               id=category_img
+${search_field}             id=et_search_job_type
+${job name}                 Software
+${select job}               com.apnatime.debug:id/tv_button
+${job path}                 xpath=//android.view.ViewGroup[@index="1"]//android.widget.TextView[@text="Software / Web Developer"]
+${particular job}           Software / Web Developer
+${job remove}               com.apnatime.debug:id/tv_button
+${back button}              //android.widget.ImageButton[@content-desc="Navigate up"]
+${job type}                 Manager
+${job result}               com.apnatime.debug:id/tv_no_results_found
+${search result}            No results found. Please select job type from the existing list
