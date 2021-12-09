@@ -135,26 +135,26 @@ User click on view and check verify the uploded resume
     #Click Element                                com.apnatime.debug:id/tv_deactivate_yes
 
 User will Search and select job by clicking on change job type
-    Wait for text on Screen                      ${jobs}
-    Click text                                   ${jobs}
-    Wait for Element on Screen                   ${Change_Job}
-    Click Element                                ${Change_Job}
-    Wait for Element on Screen                   ${search_field}
-    Input Text                                   ${search_field}       ${job name}
-    Wait for Element on Screen                   ${select job}
-    Click Element                                ${select job}
-	Element Should Contain Text                  ${job path}           ${particular job}
-	Click Element                                ${job remove}
-	Click Element                                ${back button}
+    Wait for text on Screen                       ${jobs}
+    Click text                                    ${jobs}
+    Wait for Element on Screen                    ${Change_Job}
+    Click Element                                 ${Change_Job}
+    Wait for Element on Screen                    ${search_field}
+    Input Text                                    ${search_field}       ${job name}
+    Wait for Element on Screen                    ${select job}
+    Click Element                                 ${select job}
+	Element Should Contain Text                   ${job path}           ${particular job}
+	Click Element                                 ${job remove}
+	Click Element                                 ${back button}
 
 User will Search for invalid jobs by clicking on change job type
-    Wait for text on Screen                      ${apnajobs}
-    Wait for Element on Screen                   ${Change_Job}
-    Click Element                                ${Change_Job}
-    Wait for Element on Screen                   ${search_field}
-    Input Text                                   ${search_field}       ${job type}
-    Element Should Contain Text                  ${job result}         ${search result}
-    Click Element                                ${back button}
+    Wait for text on Screen                       ${apnajobs}
+    Wait for Element on Screen                    ${Change_Job}
+    Click Element                                 ${Change_Job}
+    Wait for Element on Screen                    ${search_field}
+    Input Text                                    ${search_field}       ${job type}
+    Element Should Contain Text                   ${job result}         ${search result}
+    Click Element                                 ${back button}
 
 
 Close Apna application
