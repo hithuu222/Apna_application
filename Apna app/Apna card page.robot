@@ -125,8 +125,8 @@ User click on view and check verify the uploded resume
     Click Element                                 ${resume close}
 
 #Deleting the account details
-    #Wait for Element on Screen	                com.apnatime.debug:id/btn_menu
-    #Click Element                       	    com.apnatime.debug:id/btn_menu
+    #Wait for Element on Screen                   com.apnatime.debug:id/btn_menu
+    #Click Element                                com.apnatime.debug:id/btn_menu
     #Wait for text on Screen	                  Delete profile
     #Click Text                                   Delete profile
     # Wait for text on Screen                 	  com.apnatime.debug:id/dlg_llYes
@@ -143,9 +143,9 @@ User will Search and select job by clicking on change job type
     Input Text                                    ${search_field}           ${job name}
     Wait for Element on Screen                    ${select job}
     Click Element                                 ${select job}
-	Element Should Contain Text                 ${job path}               ${particular job}
-	Click Element                               ${job remove}
-	Click Element                               ${back button}
+	Element Should Contain Text                   ${job path}               ${particular job}
+	Click Element                                 ${job remove}
+	Click Element                                 ${back button}
 
 User will Search for invalid jobs by clicking on change job type
     Wait for text on Screen                       ${apnajobs}
