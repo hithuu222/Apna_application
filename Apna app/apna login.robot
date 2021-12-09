@@ -104,5 +104,6 @@ Then give gallary details and click next
 Enter contact details and give next
     Wait for text on Screen and click Text    ${jobs}
 
+
 Close apna application
     Close application

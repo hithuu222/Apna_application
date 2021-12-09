@@ -64,6 +64,18 @@ Edit Education details
     Click element                                 ${move}
 
 Edit gallary details and click next
+    Wait for Element on Screen                    ${photo}
+    Click Element                                 ${photo}
+    Wait for text on Screen                       ${allow}
+    Click text                                    ${allow}
+    Wait for text on Screen                       ${allow}
+    Click text                                    ${allow}
+    Wait for Element on Screen                    ${click image}
+    Click Element                                 ${click image}
+    Wait for Element on Screen                    ${click done}
+    Click Element                                 ${click done}
+    Wait for Element on Screen                    ${continue}
+    Click Element                                 ${continue}
     Wait for Element on Screen                    ${done}
     Click Element                                 ${done}
 
@@ -145,9 +157,8 @@ User will Search for invalid jobs by clicking on change job type
     Click Element                                ${back button}
 
 
-
-#Close Apna application
- #   Close application
+Close Apna application
+    Close application
 
 
 

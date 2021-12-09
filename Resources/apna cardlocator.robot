@@ -60,6 +60,11 @@ ${education}                id=et_education
 ${move}                     id=act_education_btn_continue
 
 #picture variables
+${photo}                    id=tv_take_photo
+${allow}                    ALLOW
+${click image}              id=com.android.camera2:id/shutter_button
+${click done}               id=com.android.camera2:id/done_button
+${continue}                 id=com.apnatime.debug:id/ucrop_btn_crop
 ${done}                     id=act_profile_info_btn_continue
 
 #Verify card details variables
