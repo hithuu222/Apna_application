@@ -12,7 +12,7 @@ ${card}                     Card
 ${apna}                     apnaCard
 
 #Header variables
-${change language}          com.apnatime.debug:id/menu_tv_language
+${change language}          id=menu_tv_language
 ${language}                 Kannada
 ${inbox}                    id=iv_conversation
 ${inbox1}                   id=noConversations
@@ -62,9 +62,9 @@ ${move}                     id=act_education_btn_continue
 #picture variables
 ${photo}                    id=tv_take_photo
 ${allow}                    ALLOW
-${click image}              id=com.android.camera2:id/shutter_button
-${click done}               id=com.android.camera2:id/done_button
-${continue}                 id=com.apnatime.debug:id/ucrop_btn_crop
+${click image}              id=shutter_button
+${click done}               id=done_button
+${continue}                 id=ucrop_btn_crop
 ${done}                     id=act_profile_info_btn_continue
 
 #Verify card details variables
@@ -87,14 +87,14 @@ ${Pending Requests page}    id=activity_profile_count_fragment_container
 ${delete}                   id=activity_profile_count_close
 
 #resume variables
-${upload resume}            com.apnatime.debug:id/btn_upload_resume
-${resume}                   com.apnatime.debug:id/iv_upload_icon
-${resume file}              com.android.documentsui:id/nameplate
-${resume submit}            com.apnatime.debug:id/btn_submit
-${resume done}              com.apnatime.debug:id/btn_done
-${resume view}              com.apnatime.debug:id/tv_view_resume
-${resume remove}            com.apnatime.debug:id/btn_remove
-${resume close}             com.apnatime.debug:id/iv_close
+${upload resume}            id=btn_upload_resume
+${resume}                   id=iv_upload_icon
+${resume file}              id=nameplate
+${resume submit}            id=btn_submit
+${resume done}              id=btn_done
+${resume view}              id=tv_view_resume
+${resume remove}            id=btn_remove
+${resume close}             id=iv_close
 
 #Search job
 ${apnajobs}                 apnaJobs
@@ -102,11 +102,11 @@ ${jobs}                     Jobs
 ${Change_Job}               id=category_img
 ${search_field}             id=et_search_job_type
 ${job name}                 Software
-${select job}               com.apnatime.debug:id/tv_button
+${select job}               id=tv_button
 ${job path}                 xpath=//android.view.ViewGroup[@index="1"]//android.widget.TextView[@text="Software / Web Developer"]
 ${particular job}           Software / Web Developer
-${job remove}               com.apnatime.debug:id/tv_button
-${back button}              //android.widget.ImageButton[@content-desc="Navigate up"]
+${job remove}               id=tv_button
+${back button}              xpath=//android.widget.ImageButton[@content-desc="Navigate up"]
 ${job type}                 Manager
-${job result}               com.apnatime.debug:id/tv_no_results_found
+${job result}               id=tv_no_results_found
 ${search result}            No results found. Please select job type from the existing list
